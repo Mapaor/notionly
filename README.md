@@ -1,5 +1,4 @@
 # The `notionly` Package
-<div align="center">Version 0.1.0</div>
 
 A Typst package for obtaining the Notion look. Primarly used in `notion2typst`.
  

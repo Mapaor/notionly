@@ -11,7 +11,7 @@ A short description about the project and/or client.
 - [X] Check and/or replace `LICENSE` by something that suits your needs
 - [X] Fill out `typst.toml`
   - See also the [typst/packages README](https://github.com/typst/packages/?tab=readme-ov-file#package-format)
-- [ ] Adapt Repository URLs in `CHANGELOG.md`
+- [X] Adapt Repository URLs in `CHANGELOG.md`
   - Consider only committing that file with your first release, or removing the "Initial Release" part in the beginning
 - [ ] Adapt or deactivate the release workflow in `.github/workflows/release.yml`
   - to deactivate it, delete that file or remove/comment out lines 2-4 (`on:` and following)

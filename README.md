@@ -29,12 +29,6 @@ If you want to see a more comprehensive example use the [`./tests/showcase/showc
 
 <img width="300" height="1684" alt="notionly-3" src="https://github.com/user-attachments/assets/fd5d06f6-93c8-4754-9206-97923b6f1a44" />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg">
-  <img src="./thumbnail-light.svg">
-</picture>
-
-
 # Docs
 It is not complicated, the only new functions are `callout` and  `bookmark`, the rest are overrides of existing functions.
 

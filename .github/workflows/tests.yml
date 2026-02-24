@@ -59,7 +59,3 @@ jobs:
             tests/**/out/*.png
             tests/**/ref/*.png
           retention-days: 5
-
-      - name: Build docs
-        if: ${{ matrix.typst-version.doc }}
-        run: just doc

@@ -7,13 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-<details>
-<summary>Migration guide from v0.1.X</summary>
-
-<!-- Write migration guide here -->
-
-</details>
-
 ### Added
 
 ### Changed
@@ -26,14 +19,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-## [0.1.0] - 2025-01-01
+<!-- ## [0.1.0] - 2025-01-01 
 
-### Added
+### Added -->
 
 <!-- Describe the feature set of the initial release here -->
--
--
--
 
 <!--
 Below are the target URLs for each version
@@ -42,5 +32,5 @@ to the corresponding tag on GitHub, or the diff
 in comparison to the previous release
 -->
 
-[Unreleased]: https://github.com/<author>/<my-package>/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/<author>/<my-package>/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Mapaor/notionly/compare/v0.1.0...HEAD
+<!-- [0.1.0]: https://github.com/Mapaor/notinoly/releases/tag/v0.1.0 -->

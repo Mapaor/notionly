@@ -4,6 +4,7 @@ A Typst package for obtaining the Notion look. Primarly used in `notion2typst`.
  
 ## For future reference (I'll delete once implemented)
 To use the workflow
+
     - [ ] check the values under `env:`, particularly `REGISTRY_FORK`
     - [ ] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_FORK`
     - [ ] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token

@@ -5,9 +5,10 @@ A Typst package for obtaining the Notion look. Primarly used in `notion2typst`.
 ## For future reference (I'll delete once implemented)
 To use the workflow
 
-- [ ] check the values under `env:`, particularly `REGISTRY_FORK`
-- [ ] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_FORK`
-- [ ] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token
+- [X] check the values under `env:`, particularly `REGISTRY_FORK`
+- [X] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_FORK`
+- [X] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token
+- [ ] Finally re-activate the workflow (uncomment lines 2-4)
 
 ## Context
 This package is meant to be used alongside the npm package `notion2typst` ([link](https://www.npmjs.com/package/nast)) to properly render the Notion content transformed into Typst code. This package achieves the Notion look by setting some custom functions (callout, bookmark...), overriding default ones (like quote, code...), setting some variables (notion color palette), enabling by default some styling (Inter font, margins, leading par space, etc.) and other stylistic choices. 

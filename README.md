@@ -23,11 +23,11 @@ To get up and running you just need to add this at the beginning of your page:
 
 If you want to see a more comprehensive example use the [`./tests/showcase/showcase.typ`](./tests/showcase/showcase.typ), which generates the following document:
 
-<img width="200" height="1684" alt="notionly-1" src="https://github.com/user-attachments/assets/20d5469e-fd87-4999-8579-c431fc3521f9" />
+<img width="300" height="1684" alt="notionly-1" src="https://github.com/user-attachments/assets/20d5469e-fd87-4999-8579-c431fc3521f9" />
 
-<img width="200" height="1684" alt="notionly-2" src="https://github.com/user-attachments/assets/01e5c7ce-4f18-433c-9c04-3b023e5a98ce" />
+<img width="300" height="1684" alt="notionly-2" src="https://github.com/user-attachments/assets/01e5c7ce-4f18-433c-9c04-3b023e5a98ce" />
 
-<img width="200" height="1684" alt="notionly-3" src="https://github.com/user-attachments/assets/fd5d06f6-93c8-4754-9206-97923b6f1a44" />
+<img width="300" height="1684" alt="notionly-3" src="https://github.com/user-attachments/assets/fd5d06f6-93c8-4754-9206-97923b6f1a44" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg">

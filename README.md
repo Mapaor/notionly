@@ -13,8 +13,8 @@ A short description about the project and/or client.
   - See also the [typst/packages README](https://github.com/typst/packages/?tab=readme-ov-file#package-format)
 - [X] Adapt Repository URLs in `CHANGELOG.md`
   - Consider only committing that file with your first release, or removing the "Initial Release" part in the beginning
-- [ ] Adapt or deactivate the release workflow in `.github/workflows/release.yml`
-  - to deactivate it, delete that file or remove/comment out lines 2-4 (`on:` and following)
+- Adapt or deactivate the release workflow in `.github/workflows/release.yml`
+  - [X] to deactivate it, delete that file or remove/comment out lines 2-4 (`on:` and following)
   - to use the workflow
     - [ ] check the values under `env:`, particularly `REGISTRY_FORK`
     - [ ] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_FORK`

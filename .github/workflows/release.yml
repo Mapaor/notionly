@@ -1,7 +1,7 @@
 name: Package, release, publish
-# on:
-#   push:
-#     tags: [ v* ]
+on:
+  push:
+    tags: [ v* ]
 
 env:
   # the forge (host) at which the registry lies

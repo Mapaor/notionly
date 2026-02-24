@@ -1,8 +1,8 @@
 # The `notionly` Package
 <div align="center">Version 0.1.0</div>
 
-A short description about the project and/or client.
-
+A Typst package for obtaining the Notion look. Primarly used in `notion2typst`.
+ 
 ## For future reference (I'll delete once implemented)
 To use the workflow
     - [ ] check the values under `env:`, particularly `REGISTRY_FORK`

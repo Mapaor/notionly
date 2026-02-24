@@ -1,14 +1,14 @@
-# The `my-package` Package
+# The `notionly` Package
 <div align="center">Version 0.1.0</div>
 
 A short description about the project and/or client.
 
 ## Template adaptation checklist
 
-- [ ] Fill out `README.md`
+- [X] Fill out `README.md`
   - Change the `my-package` package name, including code snippets
   - Check section contents and/or delete sections that don't apply
-- [ ] Check and/or replace `LICENSE` by something that suits your needs
+- [X] Check and/or replace `LICENSE` by something that suits your needs
 - [ ] Fill out `typst.toml`
   - See also the [typst/packages README](https://github.com/typst/packages/?tab=readme-ov-file#package-format)
 - [ ] Adapt Repository URLs in `CHANGELOG.md`
@@ -40,16 +40,6 @@ These instructions will get you a copy of the project up and running on the typs
   <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg">
   <img src="./thumbnail-light.svg">
 </picture>
-
-### Installation
-
-A step by step guide that will tell you how to get the development environment up and running. This should explain how to clone the repo and where to (maybe a link to the typst documentation on it), along with any pre-requisite software and installation steps.
-
-```
-$ First step
-$ Another step
-$ Final step
-```
 
 ## Usage
 

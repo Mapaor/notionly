@@ -5,12 +5,12 @@ A Typst package for obtaining the Notion look. Primarly used in `notion2typst`.
 ## For future reference (I'll delete once implemented)
 To use the workflow
 
-    - [ ] check the values under `env:`, particularly `REGISTRY_FORK`
-    - [ ] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_FORK`
-    - [ ] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token
+- [ ] check the values under `env:`, particularly `REGISTRY_FORK`
+- [ ] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_FORK`
+- [ ] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token
 
 ## Context
-This package is meant to be used alongside the npm package `notion2typst` ([link](https://www.npmjs.com/package/nast) to properly render the Notion content transformed into Typst code. This package achieves the Notion look by setting some custom functions (callout, bookmark...), overriding default ones (like quote, code...), setting some variables (notion color palette), enabling by default some styling (Inter font, margins, leading par space, etc.) and other stylistic choices. 
+This package is meant to be used alongside the npm package `notion2typst` ([link](https://www.npmjs.com/package/nast)) to properly render the Notion content transformed into Typst code. This package achieves the Notion look by setting some custom functions (callout, bookmark...), overriding default ones (like quote, code...), setting some variables (notion color palette), enabling by default some styling (Inter font, margins, leading par space, etc.) and other stylistic choices. 
 
 The goal is that by simply importing tha package and using a show rule one can properly show the Typst content to look as if it were inside Notion. Obviously one can also use configuration in the show rule to tweak some parts of the look and one can always override set rules (like font, font-size, links color, etc.).
 

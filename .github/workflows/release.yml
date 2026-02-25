@@ -86,6 +86,10 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: ${{ needs.build.outputs.pkg-id }}/*
+          tag: ${{ github.ref_name }}
+          allowUpdates: true     
+          replace: true       
+          failOnUnmatchedFiles: false
 
   publish:
     name: Publish to a registry fork

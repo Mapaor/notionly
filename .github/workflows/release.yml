@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Install just
         uses: taiki-e/install-action@v2
@@ -94,7 +94,7 @@ jobs:
 
     steps:
       - name: Checkout package registry
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
         with:
           github-server-url: ${{ env.REGISTRY_FORGE }}
           repository: ${{ env.REGISTRY_REPO }}

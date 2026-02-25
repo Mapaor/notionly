@@ -1,4 +1,4 @@
-#import "/src/lib.typ": *
+#import "../../src/lib.typ": *
 #show: notionly
 
 // ------------ EXAMPLES ---------
@@ -135,7 +135,7 @@ Besides inline links we can also have bookmarks which are blocks.
 The following is a bookmark:
 #bookmark(
   title: "This is a bookmark",
-  previewImage: "2257.jpg",
+  previewImage: "../tests/showcase/og-cover.jpg",
   description: "This is a long description which corresponds to the open graph meta tag `description`.",
   url: "https://examplewebsite.com/"
 )

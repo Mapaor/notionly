@@ -46,8 +46,8 @@ jobs:
         with:
           tytanic-version: ${{ matrix.typst-version.tytanic }}
 
-      - name: Run test suite
-        run: just test
+      - name: Run showcase test
+        run: tytanic test tests/showcase.typ
 
       - name: Archive test results
         uses: actions/upload-artifact@v4

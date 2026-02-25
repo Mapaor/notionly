@@ -47,7 +47,7 @@ jobs:
           tytanic-version: ${{ matrix.typst-version.tytanic }}
 
       - name: Confirm tytanic installation
-        run: which tytanic && tytanic --version
+        run: command -v tytanic && tytanic --version
 
       - name: Run showcase test
         run: tytanic test tests/showcase.typ

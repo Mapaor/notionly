@@ -1,5 +1,8 @@
 #import "../../src/lib.typ": *
-#show: notionly
+#show: notionly.with(
+  custom-font: "Arial" // "Inter" (or remove this line as it's the default) if you are on the Typst.app
+)
+
 
 // ------------ EXAMPLES ---------
 
@@ -16,6 +19,7 @@ Bla bla bla
 - [X] Finish checklist support
 - [X] Finish callout support
 - Normal bullet (unchanged)
+#v(4em)
 
 // CODE
 
@@ -34,7 +38,7 @@ for n in range(3):
     v = np.ones((2, 2)) * n
     print(v)
 ```
-
+#v(4em)
 
 // CALLOUTS
 
@@ -44,12 +48,10 @@ for n in range(3):
 
 #callout()[
   This is the default callout (no emoji) using Notion Gray background which is great.
-  === Adeuuu
-  Tot genial oi que síiii?
 ]
 
 #callout(icon: "💡")[
-  This callout has an emoji. The content is indented to the right, like in Notion.
+  This callout has an emoji. The content is aligned to the right, like in Notion.
 
   - It can contain lists.
   - Multiple paragraphs work too.
@@ -58,11 +60,11 @@ for n in range(3):
 #callout(icon: "📘", bg: notion.blue_bg)[
   This is a callout with blue background and a book icon. Both are optional.
   === A callout can contain more than one block like a heading
-  And of course the text can be *rich* text.
+  And of course the text can be _rich_ text.
 ]
 
 #callout(icon: "🛠️", bg: notion.yellow_bg)[
-  Hola bon dia
+  One more example callout.
 ]
 
 #callout(icon: "🧪", bg: notion.green_bg)[
@@ -118,6 +120,7 @@ for n in range(3):
   $ 
   Here is auto-sizes to fit. This is enabled by default but can be disabled if desired.
 ]
+#v(4em)
 
 // LINKS
 #align(center)[=  Link Examples]
@@ -147,3 +150,94 @@ All parameters in a bookmark (except the URL) are optional
 )
 Only the URL is mandatory
 #bookmark(url: "https://examplewebsite.com/")
+
+#v(4em)
+
+// TOGGLES
+#align(center)[= Toggles]
+#line(length: 100%, stroke: 0.2pt)
+
+// Simple toggle
+#toggle(open: false)[This is a toggle][
+  This is a children block
+]
+
+// Toggle headings (closed)
+#toggle(
+  heading: 3,
+  open: false,
+)[This is a toggle heading 3][
+  It can have children content
+]
+#toggle(
+  heading: 2,
+  open: false
+)[This is a toggle heading 2][
+  It can have children content
+]
+#toggle(
+  heading: 1,
+  open: false
+)[This is a toggle heading 1][
+  It can have children content
+]
+
+#v(1em)
+
+// Toggles (open)
+#toggle(
+  heading: 0,
+  open: true,
+)[This is a toggle][
+  It can have children content
+]
+#toggle(
+  heading: 3,
+  open: true,
+)[This is a toggle heading 3][
+  It can have children content
+]
+#toggle(
+  heading: 2,
+  open: true,
+)[This is a toggle heading 2][
+  It can have children content
+]
+#toggle(
+  heading: 1,
+  open: true
+)[This is a toggle heading 1][
+  It can have children content
+]
+
+#v(1em)
+
+// Identation
+#toggle(
+  heading: 2,
+  indentation: false,
+  // open: true,
+)[Custom section][
+  Nested content without indentation \
+  #lorem(7)
+]
+#v(1em)
+#toggle(
+  heading: 2,
+  indentation: true,
+  // open: true,
+)[Custom section][
+  Nested content with indentation (default) \
+  #lorem(7)
+]
+
+
+// MEDIA FILES
+#align(center)[= Media Files Examples]
+#line(length: 100%, stroke: 0.2pt)
+
+A continuació un  vídeo:
+#video("https://notion.so", ext: "mp4")[This is an example video]
+
+I ara un PDF:
+#pdf("https://notion.so")[This is an example document]

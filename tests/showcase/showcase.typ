@@ -1,8 +1,5 @@
 #import "../../src/lib.typ": *
-#show: notionly.with(
-  custom-font: "Arial" // "Inter" (or remove this line as it's the default) if you are on the Typst.app
-)
-
+#show: notionly
 
 // ------------ EXAMPLES ---------
 
@@ -127,14 +124,11 @@ for n in range(3):
 #line(length: 100%, stroke: 0.2pt)
 All #link("https://example.com")[Links] get decorated by default with blue text and underline.
 
-This means child pages also get decorated:
 
-#link("https://notion.so/30611a97-61ab-80fa-9156-c1501e88d148")[📄 This is a child page]
 
 Page mentions also get decorated but also have italics like #link("https://notion.so/30611a97-61ab-80fa-9156-c1501e88d148")[_This is a child page_].
 
-Besides inline links we can also have bookmarks which are blocks. 
-
+We can also have bookmarks which are blocks. 
 The following is a bookmark:
 #bookmark(
   title: "This is a bookmark",
@@ -150,6 +144,44 @@ All parameters in a bookmark (except the URL) are optional
 )
 Only the URL is mandatory
 #bookmark(url: "https://examplewebsite.com/")
+We can also have child pages like:
+#child-page("https://notion.so/30611a97-61ab-80fa-9156-c1501e88d148")[This is a child page]
+We can also have embed elements, which are also blocks:
+#embed("https://example.com")
+And link previews, that we simply leave as a link just like embeds:
+#link-preview("https://example.com")
+// TO-DO: Add link previews
+
+#v(16em)
+
+
+// TABLES
+#align(center)[= Table Examples]
+#line(length: 100%, stroke: 0.2pt)
+
+This is an example table with only row header:
+#table(
+  columns: (1fr, 1fr, 1fr),
+  align: (left, left, left),
+  fill: (x, y) => {
+    if y == 0 {rgb("#f7f6f3")}
+  },
+  [Matí], [Tarda], [Nit],
+  [Esmorzar], [Anar a passejar], [Sopar],
+  [Estar amb la família], [Fer un brownie], [Dormir]
+)
+
+This is an example table with both row header and column header:
+#table(
+  columns: (1fr, 1fr, 1fr),
+  align: (left, left, left),
+  fill: (x, y) => {
+    if x == 0 or y == 0 {rgb("#f7f6f3")}
+  },
+  [], [Dissabte], [Diumenge],
+  [Matí], [Netejar l’habitació], [Programar],
+  [Tarda], [Festa d’aniversari], [Estudiar _Relativitat_]
+)
 
 #v(4em)
 
@@ -231,13 +263,19 @@ Only the URL is mandatory
   #lorem(7)
 ]
 
-
+#v(1em)
 // MEDIA FILES
 #align(center)[= Media Files Examples]
 #line(length: 100%, stroke: 0.2pt)
 
 A continuació un  vídeo:
-#video("https://notion.so", ext: "mp4")[This is an example video]
+#video("https://notion.so/30511a9761ab802c808cdbb05b786986", ext: "mp4")[This is an example video]
+
+I un fitxer arbitrari:
+#file("https://notion.so/30511a9761ab802c808cdbb05b786986", ext: "py")[Hello_world]
+
+I podem personalitzar la icona si volem:
+#file("https://notion.so/30511a9761ab802c808cdbb05b786986", ext:"zip", icon: "📄")[Secret_Folder]
 
 I ara un PDF:
-#pdf("https://notion.so")[This is an example document]
+#pdf("https://notion.so/30511a9761ab802c808cdbb05b786986")[This is an example document]

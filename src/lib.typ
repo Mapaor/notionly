@@ -7,18 +7,20 @@
 #import "links.typ": *  
 #import "toggles.typ": *
 #import "media.typ": *
+#import "tables.typ": *
 
 // Main function
 #let notionly(
   body,
   style: "notion",
-  custom-font: "",
+  font: "",
 
   // TO-DO: Add subpackage configurations here
 ) = {
   
   // SHOW RULES (for each subpackage)
   show: quotion
+  show: tabletion
   show: linktion.with(
     // linkDecorations: false,
   )
@@ -44,12 +46,10 @@
     set par(leading: 1.25em)
     set par(spacing: 1em)
     let notion-font = "Inter" // It actually is San Francisco Pro on MacOS, but it is not free nor included on the Typst.app so Inter is the best fallback.
-    if (custom-font != "") {
-      notion-font = custom-font
+    if (font != "") {
+      notion-font = font
     }
     set text(font: notion-font)
-
-    
     set text(
       size: 10.8pt,
       fill: notion.default_text  // rgb("#171717"))

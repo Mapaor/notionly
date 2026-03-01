@@ -14,7 +14,8 @@
   )[
     #it.body
   ]
-    doc
+  
+  doc
 }
 
 // Now we rename the styled quote to qquote

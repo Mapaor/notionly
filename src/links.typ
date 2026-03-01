@@ -83,4 +83,58 @@
   ]
 ]
 
+// EMBED ELEMENT
+#let embed(
+  url
+) = {
+  block(
+    link(url)[
+      #box(
+        inset: 1em, 
+        stroke: gray + 0.5pt,
+        width: 100%,
+        radius: 4pt
+      )[
+        EMBED ELEMENT: ↗️ #url
+      ]
+    ]
+  )
+}
 
+// LINK PREVIEW
+#let link-preview(
+  url
+) = {
+  block(
+    link(url)[
+      #box(
+        inset: 1em, 
+        stroke: gray + 0.5pt,
+        width: 100%,
+        radius: 4pt
+      )[
+        LINK PREVIEW: ↗️ #url
+      ]
+    ]
+  )
+}
+
+// CHILD PAGE
+#let child-page(
+  url,
+  icon: "📄",
+  title
+) = {
+  block(
+    link(url)[
+      #box(
+        inset: 1em, 
+        stroke: gray + 0.5pt,
+        width: 100%,
+        radius: 4pt
+      )[
+        #icon #url
+      ]
+    ]
+  )
+}

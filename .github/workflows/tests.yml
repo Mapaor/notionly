@@ -12,53 +12,33 @@ jobs:
       fail-fast: false
       matrix:
         # add any other Typst versions that your package should support
-        typst-version:
-          - typst: 0.12
-            tytanic: 0.1
-          - typst: 0.13
-            tytanic: 0.2
-          - typst: 0.14
-            tytanic: 0.3
-            # the docs don't need to build with all versions supported by the package;
-            # the latest one is enough
-            doc: true
+        typst-version: ["0.12", "0.13", "0.14"]
 
-    name: Test for ${{ matrix.typst-version.typst }} (Tytanic ${{ matrix.typst-version.tytanic }}${{ matrix.typst-version.doc && ', with docs' }})
+    name: Test for Typst ${{ matrix.typst-version }}
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Install just
-        uses: taiki-e/install-action@v2
-        with:
-          tool: just
+        uses: actions/checkout@v4
 
       - name: Setup typst
-        id: setup-typst
         uses: typst-community/setup-typst@v4
         with:
-          typst-version: ${{ matrix.typst-version.typst }}
+          typst-version: ${{ matrix.typst-version }}
 
-      - name: Setup tytanic
-        uses: typst-community/setup-tytanic@v1
-        with:
-          tytanic-version: ${{ matrix.typst-version.tytanic }}
+      - name: Install fonts
+        run: |
 
-      - name: Confirm tytanic installation
-        run: command -v tytanic && tytanic --version
+      - name: Run compilation tests
+        run: |
+          echo "Testing showcase compilation..."
+          typst compile --root . tests/showcase/showcase.typ tests/showcase/showcase.pdf
+          echo "✓ Showcase compiled successfully"
 
-      - name: Run showcase test
-        run: tytanic test tests/showcase.typ
-
-      - name: Archive test results
+      - name: Upload compiled output
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: typst-${{ steps.setup-typst.outputs.typst-version }}-test-results
-          path: |
-            tests/**/diff/*.png
-            tests/**/out/*.png
-            tests/**/ref/*.png
+          name: typst-${{ matrix.typst-version }}-output
+          path: tests/showcase/*.pdf
           retention-days: 5

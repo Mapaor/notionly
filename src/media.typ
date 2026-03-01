@@ -54,6 +54,6 @@
   ext: "pdf",
   name
 ) = {
-  file(url, icon: icon, ext: ext, name)
+  file(url, icon: icon, ext: "pdf", name)
 }
 

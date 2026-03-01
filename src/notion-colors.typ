@@ -1,3 +1,4 @@
+// Notion Palette
 #let notion = (
   default_text: rgb("#373530"),
   default: rgb("#373530"),

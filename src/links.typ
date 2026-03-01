@@ -1,3 +1,4 @@
+// NORMAL LINKS
 #let linktion(doc, linkDecorations: true) = {
   // INLINE LINKS (blue and underlined by default)
   show link: it => {
@@ -25,7 +26,7 @@
     radius: 6pt,
     inset: (x: 1.2em, y: 1.2em),
   )[
-    // Two-column layout: text (left) + image (right)
+    // Two-column
     #let left-width = 68% 
     #let right-width = 32%
     #if (previewImage == none) {
@@ -38,7 +39,7 @@
       
       // Left column: Title + Description + URL
       box()[
-        // Title (larger, bold)
+        // Title
         #if title != "" {
           text(
             size: 1.1em,
@@ -57,11 +58,11 @@
           linebreak()
         }
         
-        // URL (small, gray, full-width)
+        // URL
         #text(
           size: 0.85em,
           fill: blue,
-          // font: "Inter"
+          // font: "custom-font"
         )[
           #underline[#url]
         ]

@@ -1,6 +1,4 @@
-
-// Inspired by the 'cheq' package (https://typst.app/universe/package/cheq/)
-
+// CREDITS: Inspired by the 'cheq' package (https://typst.app/universe/package/cheq/)
 #let checktion(
   doc,
   unchecked-stroke-color: rgb("#373530"), // Notion default text color
@@ -122,12 +120,4 @@
 
   doc
 }
-
-
-
-// === Example
-// - [ ] Buy milk
-// - [X] Send the email
-// - Normal bullet (unchanged)
-
 

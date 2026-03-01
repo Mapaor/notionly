@@ -1,3 +1,5 @@
+// In case large equations are found (they may not fit within the document or column)
+// they get auto-sized to fit the available width
 #let auto-size-math(
   doc,
   scale-equations: true,

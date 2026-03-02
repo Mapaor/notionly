@@ -166,9 +166,9 @@ This is an example table with only row header:
   fill: (x, y) => {
     if y == 0 {rgb("#f7f6f3")}
   },
-  [Matí], [Tarda], [Nit],
-  [Esmorzar], [Anar a passejar], [Sopar],
-  [Estar amb la família], [Fer un brownie], [Dormir]
+  [Morning], [Afternoon], [Evening],
+  [Have breakfast], [Go for a walk], [Have dinner],
+  [Spend time with family], [Bake a brownie], [Read in bed]
 )
 
 This is an example table with both row header and column header:
@@ -178,10 +178,11 @@ This is an example table with both row header and column header:
   fill: (x, y) => {
     if x == 0 or y == 0 {rgb("#f7f6f3")}
   },
-  [], [Dissabte], [Diumenge],
-  [Matí], [Netejar l’habitació], [Programar],
-  [Tarda], [Festa d’aniversari], [Estudiar _Relativitat_]
+  [], [Saturday], [Sunday],
+  [Morning], [Clean the room], [Programming],
+  [Afternoon], [Go to that birthday pary], [Study _General Relativity_]
 )
+
 
 #v(4em)
 

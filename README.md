@@ -48,7 +48,7 @@ And here is an example of a bookmark:
 )
 ```
 
-See the [showcase](./tests/showcase/showcase.typ) example for a more detailed example on how to use the package.
+See the [showcase](https://github.com/Mapaor/notionly/blob/main/tests/showcase/showcase.typ) example for a more detailed example on how to use the package.
 
 ## FAQs
 No one has asked me any question yet. For inquiries, proposals or help using notionly contact me at [pardo.marti@gmail.com](mailto:pardo.marti@gmail.com)

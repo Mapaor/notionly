@@ -1,6 +1,6 @@
 # The `notionly` Package
 
-A Typst package for obtaining the Notion look. Primarly used in `notion2typst`.
+A Typst package for obtaining the Notion look.
 
 ## Context
 This package is meant to be used alongside the npm package [`notion2typst`](https://www.npmjs.com/package/@nast/notion2typst) which is a wrapper over a set of npm packages under the [nast](https://www.npmjs.com/org/nast) scope. The npm package generates the Typst code (content) given a Notion page and this Typst package gives it the Notion look by setting some custom functions (callout, bookmark, toggle...), overriding default ones (quote, code...), setting some variables (notion color palette), enabling by default some styling (Inter font, margins, leading par space, etc.) and other stylistic choices. 
@@ -14,14 +14,12 @@ To get up and running you just need to add this at the beginning of your page:
 ```typ
 #import "@preview/notionly:0.1.0": *
 
-#show: notionly.with(
-  // style: "notion"
-)
+#show: notionly
 ```
 
 ## Usage
 
-If you want to see a more comprehensive example use the [`./tests/showcase/showcase.typ`](./tests/showcase/showcase.typ), which generates the following document:
+If you want to see a more comprehensive example and configuration options use the [`./tests/showcase/showcase.typ`](./tests/showcase/showcase.typ), which generates the following document:
 
 <img width="1191" height="1684" alt="notionly-1" src="https://github.com/user-attachments/assets/914257ef-574f-4b31-9412-c7428903e311" />
 <img width="1191" height="1684" alt="notionly-2" src="https://github.com/user-attachments/assets/1013a182-135d-45d3-8405-96e3d6c03167" />
@@ -51,34 +49,6 @@ And here is an example of a bookmark:
 ```
 
 See the [showcase](./tests/showcase/showcase.typ) example for a more detailed example on how to use the package.
-
-## FAQs
-No one has asked me any question yet. For inquiries, proposals or help using notionly contact me at [pardo.marti@gmail.com](mailto:pardo.marti@gmail.com)
-
-## License
-MIT
-
-# Docs
-It is not complicated, the only new functions are `callout` and  `bookmark`, the rest are overrides of existing functions.
-
-Here's is an example of a callout:
-```typ
-#callout(icon: "📘", bg: notion.blue_bg)[
-  This is a callout with blue background and a book icon. Both are optional.
-  === A callout can contain more than one block like a heading
-  And of course the text can be *rich* text.
-]
-```
-
-And here is an example of a bookmark:
-```typ
-#bookmark(
-  title: "This is a bookmark",
-  previewImage: "2257.jpg",
-  description: "This is a long description which corresponds to the open graph meta tag `description`. All parameters in a callout are optional except the URL",
-  url: "https://examplewebsite.com/"
-)
-```
 
 ## FAQs
 No one has asked me any question yet. For inquiries, proposals or help using notionly contact me at [pardo.marti@gmail.com](mailto:pardo.marti@gmail.com)

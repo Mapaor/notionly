@@ -132,7 +132,7 @@ We can also have bookmarks which are blocks.
 The following is a bookmark:
 #bookmark(
   title: "This is a bookmark",
-  previewImage: "../tests/showcase/og-cover.jpg",
+  preview-image: "../tests/showcase/og-cover.jpg",
   description: "This is a long description which corresponds to the open graph meta tag `description`.",
   url: "https://examplewebsite.com/"
 )

@@ -54,4 +54,4 @@ See the [showcase](./tests/showcase/showcase.typ) example for a more detailed ex
 No one has asked me any question yet. For inquiries, proposals or help using notionly contact me at [pardo.marti@gmail.com](mailto:pardo.marti@gmail.com)
 
 ## License
-MIT
+[MIT](./LICENSE)

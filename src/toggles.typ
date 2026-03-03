@@ -118,8 +118,9 @@
 }
 
 
-// -------------------------------
+// ----------- EXAMPLE -----------------
 
+/*
 #set text(font: "Inter")
 #set text(size: 10.7pt)
 
@@ -200,3 +201,4 @@
   Nested content with indentation (default) \
   #lorem(7)
 ]
+*/

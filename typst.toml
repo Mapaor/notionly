@@ -8,6 +8,7 @@ authors = ["Mapaor"]
 license = "MIT"
 description = "A Typst package for obtaining the Notion look "
 repository = "https://github.com/Mapaor/notionly"
+# homepage = ""
 keywords = ['notion', 'callouts', 'code-blocks', 'checklists', 'quotes', 'export', 'import']
 categories = []
 disciplines = []

@@ -1,3 +1,4 @@
+// #import "@preview/notionly:0.1.0"
 #import "../../src/lib.typ": *
 #show: notionly
 

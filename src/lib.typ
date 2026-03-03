@@ -58,12 +58,19 @@
     
     body
   } else if (style == "elegant") {
+    // PENDING
     body
   } else if (style == "modern") {
+    // PENDING
     body
   } else if (style == "classic") {
+    // PENDING
     body
-  } else if (style == "sketch") {
+  } else if (style == "handwritten") {
+    // PENDING
+    body
+  } else if (style == "brutalist") {
+    // PENDING
     body
   } else {
     body
